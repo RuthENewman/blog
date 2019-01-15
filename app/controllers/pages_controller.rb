@@ -26,7 +26,7 @@ class PagesController < ApplicationController
       redirect_to @page
   end
 
-  def delete
+  def destroy
     @page.destroy
     redirect_to pages_path
   end
